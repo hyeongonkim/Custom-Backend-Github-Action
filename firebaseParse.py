@@ -65,7 +65,7 @@ def parseEMS(traceNum, nowStatus):
             time.sleep(1)
             continue
     if(req == ''):
-        return
+        return '', nowStatus
     xml = req.text
     tree = ET.fromstring(xml)
     statuses = tree.findall('longitudinalEMSList')
