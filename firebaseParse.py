@@ -57,13 +57,15 @@ def parseEMS(traceNum, nowStatus):
     newStatus = nowStatus
     parseURL = 'http://openapi.epost.go.kr/trace/retrieveLongitudinalEMSService/retrieveLongitudinalEMSService/getLongitudinalEMSList?rgist=' + str(traceNum) + '&serviceKey=' + str(ems_token)
     req = ''
-    while req == '':
+    for i in range(3):
         try:
             req = requests.get(parseURL)
             break
         except:
             time.sleep(1)
             continue
+    if(req == ''):
+        return
     xml = req.text
     tree = ET.fromstring(xml)
     statuses = tree.findall('longitudinalEMSList')
