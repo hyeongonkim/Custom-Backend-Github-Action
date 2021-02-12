@@ -154,6 +154,7 @@ for key, val in snapshot.items():
     except AttributeError:
         error_cnt += 1
         print("Attribute 에러 발생, 문제 유저 Uid: " + key)
+        
 print("\n- - - - - - - - - - - - - - - - - - - - - - - - - -\n")
 print(str(len(snapshot.items())) + "명의 유저가 사용 중입니다.")
 print(str(total_delivery) + "개 아이템을 처리하였습니다.")
