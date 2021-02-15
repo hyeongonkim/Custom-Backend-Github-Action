@@ -60,7 +60,7 @@ def parseEMS(traceNum, nowStatus):
     try:
         req = requests.get(parseURL)
     except:
-        continue
+        pass
     if(req == ''):
         return '', nowStatus
     xml = req.text
