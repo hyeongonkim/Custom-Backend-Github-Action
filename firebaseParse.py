@@ -59,9 +59,7 @@ def parseEMS(traceNum, nowStatus):
     req = ''
     try:
         req = requests.get(parseURL)
-        break
     except:
-        time.sleep(1)
         continue
     if(req == ''):
         return '', nowStatus
