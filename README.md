@@ -1,6 +1,6 @@
 # Custom-Backend
 
-Android application that query customs clearance information for overseas delivery.(Only for ROK)
+Android application that query customs clearance information for overseas delivery. (Only for ROK)
 [해외직구 통관조회 앱 서비스 백엔드 크롤러]
 
 ## 프로젝트정보
