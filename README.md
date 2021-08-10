@@ -14,5 +14,5 @@ Android application that query customs clearance information for overseas delive
 2. DB
   - Firebase
   
-3. 본 레포지토리는 NBP에서 작동하던 크롤러를 Github Action으로 이전하여 운영하기 위해 만들어졌습니다.
+3. 본 레포지토리는 NCP에서 작동하던 크롤러를 Github Action으로 이전하여 운영하기 위해 만들어졌습니다.
 ```
