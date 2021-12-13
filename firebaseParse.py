@@ -26,6 +26,7 @@ snapshot = ref.get()
 
 
 def parseUnipass(traceNum, traceYear, nowStatus):
+    print(str(traceNum))
     parsedData = OrderedDict()
     parsedData.clear()
     newStatus = nowStatus
@@ -51,6 +52,7 @@ def parseUnipass(traceNum, traceYear, nowStatus):
 
 
 def parseEMS(traceNum, nowStatus):
+    print(str(traceNum))
     parsedData = OrderedDict()
     parsedData.clear()
     newStatus = nowStatus
